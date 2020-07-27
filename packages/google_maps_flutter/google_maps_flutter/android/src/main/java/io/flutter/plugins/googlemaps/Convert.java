@@ -190,6 +190,15 @@ class Convert {
     return data;
   }
 
+  static Object circleIdToJson(String circleId) {
+    if (circleId == null) {
+      return null;
+    }
+    final Map<String, Object> data = new HashMap<>(1);
+    data.put("circleId", circleId);
+    return data;
+  }
+
   static Object heatmapIdToJson(String heatmapId) {
     if (heatmapId == null) {
       return null;
