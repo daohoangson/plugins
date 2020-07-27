@@ -20,6 +20,10 @@ dev_dependencies:
   test: ^1.6.0
   pedantic: ^1.8.0
 
+dependency_overrides:
+  google_maps_flutter_platform_interface:
+    path: ../google_maps_flutter_platform_interface
+
 flutter:
   plugin:
     platforms:
