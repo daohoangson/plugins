@@ -46,6 +46,8 @@ class FakePlatformGoogleMap {
 
   bool zoomControlsEnabled;
 
+  bool liteModeEnabled;
+
   bool trackCameraPosition;
 
   bool myLocationEnabled;
@@ -422,6 +424,9 @@ class FakePlatformGoogleMap {
     }
     if (options.containsKey('zoomControlsEnabled')) {
       zoomControlsEnabled = options['zoomControlsEnabled'];
+    }
+    if (options.containsKey('liteModeEnabled')) {
+      liteModeEnabled = options['liteModeEnabled'];
     }
     if (options.containsKey('myLocationEnabled')) {
       myLocationEnabled = options['myLocationEnabled'];
